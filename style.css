@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+
+.wrap {
+    width: 800px;
+    height: 200px;
+    position: relative;
+    margin: 100px auto;
+    border: 2px solid green;
+    overflow: hidden;
+}
+
+.smurf {
+    position: absolute;
+    left: -50px;
+    width: 71px;
+    height: 123px;
+    background-image: url(./photo_5332553875305131572_y.jpg);
+    animation: go .5s steps(16) infinite, step 3s linear infinite;
+}
+
+@keyframes go {
+    100% {
+        background-position: -1136px;
+    }
+}
+
+@keyframes step {
+    100% {
+        left: 850px;
+    }
+}
